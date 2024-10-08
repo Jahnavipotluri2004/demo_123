@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker Summary</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://www.turnbridge.com/wp-content/uploads/2023/05/AdobeStock_474018927-scaled.jpeg'); /* Background image */
+            background-size: cover; /* Ensures the image covers the full page */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full height to cover the viewport */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Text color contrasting the background */
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for better readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 50px auto; /* Center the container */
+            color: #333; /* Text color inside the container */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .mood-emojis {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days */
+            gap: 5px; /* Space between cells */
+            margin-top: 20px;
+        }
+        .day {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .happy {
+            background-color: #c6ffcc; /* Light green for happy */
+        }
+        .sad {
+            background-color: #ffcccb; /* Light red for sad */
+        }
+        .neutral {
+            background-color: #add8e6; /* Light blue for neutral */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker Summary for the Last 30 Days</h1>
+
+        <!-- Static summary message -->
+        <p>You have been happy for 15 out of the last 30 days! 😊</p> <!-- Example static message -->
+
+        <div class="mood-emojis">
+            <span class="emoji" title="Happy" style="font-size: 80px;">😊</span>
+            <span class="emoji" title="Sad" style="font-size: 80px;">😢</span>
+            <span class="emoji" title="Neutral" style="font-size: 80px;">😐</span>
+        </div>
+
+        <!-- Calendar -->
+        <div class="calendar">
+            <!-- Example of static mood history for 30 days -->
+            <div class="day happy">1</div>
+            <div class="day neutral">2</div>
+            <div class="day sad">3</div>
+            <div class="day happy">4</div>
+            <div class="day neutral">5</div>
+            <div class="day sad">6</div>
+            <div class="day happy">7</div>
+            <div class="day neutral">8</div>
+            <div class="day sad">9</div>
+            <div class="day happy">10</div>
+            <div class="day neutral">11</div>
+            <div class="day sad">12</div>
+            <div class="day happy">13</div>
+            <div class="day neutral">14</div>
+            <div class="day sad">15</div>
+            <div class="day happy">16</div>
+            <div class="day neutral">17</div>
+            <div class="day sad">18</div>
+            <div class="day happy">19</div>
+            <div class="day neutral">20</div>
+            <div class="day sad">21</div>
+            <div class="day happy">22</div>
+            <div class="day neutral">23</div>
+            <div class="day sad">24</div>
+            <div class="day happy">25</div>
+            <div class="day neutral">26</div>
+            <div class="day sad">27</div>
+            <div class="day happy">28</div>
+            <div class="day neutral">29</div>
+            <div class="day sad">30</div>
+        </div>
+
+    </div>
+</body>
+</html>
